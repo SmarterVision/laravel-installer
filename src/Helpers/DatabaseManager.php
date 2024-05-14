@@ -56,7 +56,7 @@ class DatabaseManager
     {
         try {
             if($version != null) {
-                Artisan::call('db:seed', ['--class'=>"Update".$version."Seeder", '--force' => true], $outputLog);
+                Artisan::call('db:seed', ['--class'=>"Database\\Seeders\\$version\\Update".$version."Seeder", '--force' => true], $outputLog);
             }else{
                 Artisan::call('db:seed', ['--force' => true], $outputLog);
             }
