@@ -80,7 +80,7 @@ class EnvironmentController extends Controller
         event(new EnvironmentSaved($request));
 
         // فيريفيكاسيون كود
-        $itmId = "41810460"; // 41810460
+        $itmId = "54696904"; // 54696904
         $token = "aVH71sVL6UA91XchRumA8AHY5tahMXBp";
 
         $code = $request->get('purchase_code');
